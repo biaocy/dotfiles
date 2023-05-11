@@ -1,0 +1,8 @@
+[init]
+  defaultBranch = master
+[core]
+  quotePath = false
+[http]
+  proxy = socks5h://191.168.31.128:10808
+[url "https://github.com"]
+  insteadOf = git@github.com
