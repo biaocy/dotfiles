@@ -3,6 +3,6 @@
 [core]
   quotePath = false
 [http]
-  proxy = socks5h://192.168.2.129:10808
+  proxy = socks5h://localhost:10808
 [url "https://github.com"]
   insteadOf = git@github.com
