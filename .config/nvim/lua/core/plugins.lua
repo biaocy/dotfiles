@@ -36,6 +36,14 @@ return require('packer').startup(function(use)
     'williamboman/mason-lspconfig.nvim',
     'neovim/nvim-lspconfig',
   }
+  use {
+    'Exafunction/codeium.vim',
+    config = function()
+      vim.keymap.set('i', '<C-]>', function() return vim.fn['codeium#Clear']() end, {expr = true})
+      vim.keymap.set('i', '<M-[>', function() return vim.fn['codeium#CycleCompletions'](-1) end, {expr = true})
+      vim.keymap.set('i', "<M-]>", function() return vim.fn['codeium#CycleCompletions'](1) end, {expr = true})
+    end
+  }
 
 	if packer_bootstrap then
 		require('packer').sync()
