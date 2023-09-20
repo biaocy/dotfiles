@@ -1,7 +1,7 @@
 vim.b.copilot_enabled = false
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
-vim.g.copilot_proxy = 'http://192.168.31.128:10809'
+vim.g.copilot_proxy = 'http://localhost:7890'
 
 vim.opt.backspace = '2'
 vim.opt.showcmd = true
